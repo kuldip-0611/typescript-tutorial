@@ -1,6 +1,6 @@
-let userArray:[number,string,boolean] = [12,'kuldip',true];
-
-userArray[1]='pandya';
-
-console.log(userArray) 
-
+enum role{
+    'ADMIN',
+    'DB_USER',
+    'MANAGER',
+}
+console.log(role)
