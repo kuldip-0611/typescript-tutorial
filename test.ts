@@ -1,5 +1,11 @@
-function add(a:number,b:number):number{
-    return a+b
-}
+let x :unknown
 
-console.log(add(12,34))
+x=12;
+x='kuldip'
+
+let y:string
+if(typeof x==='string'){
+    y=x //don't throw error 
+}
+y=x //throw error 
+//with any there is no error
