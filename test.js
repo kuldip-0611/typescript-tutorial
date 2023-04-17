@@ -1,7 +1,10 @@
-var role;
-(function (role) {
-    role[role["ADMIN"] = 0] = "ADMIN";
-    role[role["DB_USER"] = 1] = "DB_USER";
-    role[role["MANAGER"] = 2] = "MANAGER";
-})(role || (role = {}));
-console.log(role);
+var add = function (a, b) {
+    if (typeof (a) === 'number' && typeof (b) === 'number') {
+        return a + b;
+    }
+    else {
+        return a.toString() + b.toString();
+    }
+};
+console.log(add('kuldip', 'pandya'));
+console.log(add(23, 45));
