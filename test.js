@@ -1,4 +1,5 @@
-function add(a, b) {
-    return a + b;
+//never keyword
+function throwError(msg, code) {
+    throw { message: msg, port: code };
 }
-console.log(add(12, 34));
+console.log(throwError('api calling is failed', 400));
