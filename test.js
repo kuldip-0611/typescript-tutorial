@@ -1,10 +1,4 @@
-var add = function (a, b) {
-    if (typeof (a) === 'number' && typeof (b) === 'number') {
-        return a + b;
-    }
-    else {
-        return a.toString() + b.toString();
-    }
-};
-console.log(add('kuldip', 'pandya'));
-console.log(add(23, 45));
+function add(a, b) {
+    return a + b;
+}
+console.log(add(12, 34));
