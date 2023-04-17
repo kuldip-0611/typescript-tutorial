@@ -1,4 +1,5 @@
-function add(a, b) {
-    return a + b;
-}
-console.log(add(12, 34));
+var user = {
+    name: 'kuldip',
+    age: 21
+};
+console.log(user.name); //can't access the name we have to provide the type
