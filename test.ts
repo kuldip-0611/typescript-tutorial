@@ -1,8 +1,6 @@
-let arr:number[] = [12,34,56];
+let userArray:[number,string,boolean] = [12,'kuldip',true];
 
-arr.push(123);
-console.log(arr)
-let arr2 : any[] = [12,'kuldip',true]
+userArray[1]='pandya';
 
-arr2.push(23);
-console.log(arr2)
+console.log(userArray) 
+
