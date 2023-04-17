@@ -1,14 +1,7 @@
-const add = (a:number | string ,b : number | string,type:'as-string' | 'as-number') =>{
-    if(type='as-number'){
-        return (+a)+(+b);
-    }
-    else{
-        return a.toString() + b.toString()
-    }
-}
+//alias type 
 
-console.log(add('kuldip','pandya','as-string'))
+type Var_Type=number | string | boolean ;
 
-console.log(add(23,45,'as-number'))
+let a:Var_Type = 20
 
-let type1 : 'as-number' | 'as-string' ='as-number'
+let b : Var_Type ='kuldip'
