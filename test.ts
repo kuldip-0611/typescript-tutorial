@@ -1,13 +1,8 @@
-type objType ={name:string,age:number;}
+let arr:number[] = [12,34,56];
 
-const user:objType ={
-    name:'kuldip',
-    age:21
-}
+arr.push(123);
+console.log(arr)
+let arr2 : any[] = [12,'kuldip',true]
 
-const data:objType = {
-    name:'peter',
-    age:23
-}
-
-console.log(user.name) //can't access the name we have to provide the type
+arr2.push(23);
+console.log(arr2)
