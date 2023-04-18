@@ -3,22 +3,20 @@
 ///tsc -init 
 //tsc -w 
 
-class user{
-    private name = ""
-    
-    setName(name){
-        this.name = name
-    }
-    getName(){
-        console.log(this.name)
-    }
+class Users{
+    name='';
+    age=0;
+    email=''
 
-    private getNameLength(){
-        console.log(this.name.length)
+    constructor(name,age,email){
+        this.name =name
+        this.email = email
+        this.age=age
     }
-
+    displayProperty(){
+        console.log(this.age,this.name,this.email)
+    }
 }
 
-let u1 = new user();
-u1.setName('kuldip');
-u1.getName();
+let u1 = new Users('kuldip',12,'kuldip@0611')
+u1.displayProperty()

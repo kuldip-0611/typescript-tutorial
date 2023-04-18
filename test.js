@@ -1,22 +1,19 @@
 //-->for multiple file convert in js
 ///tsc -init 
 //tsc -w 
-var user = /** @class */ (function () {
-    function user() {
-        this.name = "";
-    }
-    user.prototype.setName = function (name) {
+var Users = /** @class */ (function () {
+    function Users(name, age, email) {
+        this.name = '';
+        this.age = 0;
+        this.email = '';
         this.name = name;
+        this.email = email;
+        this.age = age;
+    }
+    Users.prototype.displayProperty = function () {
+        console.log(this.age, this.name, this.email);
     };
-    user.prototype.getName = function () {
-        console.log(this.name);
-    };
-    user.prototype.getNameLength = function () {
-        console.log(this.name.length);
-    };
-    return user;
+    return Users;
 }());
-var u1 = new user();
-u1.setName('kuldip');
-u1.getNameLength();
-u1.getName();
+var u1 = new Users('kuldip', 12, 'kuldip@0611');
+u1.displayProperty();
